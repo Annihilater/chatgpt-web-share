@@ -1,28 +1,29 @@
 <template>
   <n-config-provider :theme="theme">
     <n-global-style />
-    <div class="w-full lg:w-screen-lg mx-auto h-screen flex flex-col">
-      <div class="my-4">
-        <PageHeader class="mx-2 lg:mx-0" />
+    <div class="w-full box-border min-h-screen flex flex-col">
+      <div class="my-4 px-4">
+        <PageHeader />
       </div>
-      <router-view></router-view>
+      <router-view />
     </div>
   </n-config-provider>
 </template>
 
 <script setup lang="ts">
-import PageHeader from './components/PageHeader.vue';
-import { darkTheme } from 'naive-ui'
-import { useAppStore } from './store';
+import { darkTheme } from 'naive-ui';
 import { computed } from 'vue';
+
+import PageHeader from './components/PageHeader.vue';
+import { useAppStore } from './store';
 
 const appStore = useAppStore();
 
 const theme = computed(() => {
   if (appStore.theme == 'dark') {
-    return darkTheme
+    return darkTheme;
   } else {
-    return {}
+    return {};
   }
-})
+});
 </script>

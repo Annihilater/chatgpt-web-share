@@ -108,7 +108,8 @@
     "sendKey": "发送快捷键",
     "preferences": "偏好设置",
     "renderUserMessageInMd": "渲染用户回复为Markdown",
-    "codeAutoWrap": "代码自动换行"
+    "codeAutoWrap": "代码自动换行",
+    "widerConversationPage": "对话界面宽屏展示"
   },
   "errors": {
     "403": "403 错误：无访问权限",
@@ -152,7 +153,7 @@
     "changeConversationTitleSuccess": "更改标题成功",
     "changeConversationTitleFailed": "更改标题失败",
     "rename": "请输入新标题",
-    "sendMessage": "请输入内容，使用 {0} 发送（你可以在偏好设置中修改发送键）",
+    "sendMessage": "请输入内容，使用 {0} 发送",
     "logoutConfirm": "确定要退出登录吗？",
     "pleaseEnterNickname": "请输入昵称",
     "pleaseEnterEmail": "请输入邮箱",
